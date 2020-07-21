@@ -53,8 +53,8 @@ SDK and Android NDK on your system) and run
 ```
 
 in the root folder of this project. This should give you a .apk file in the app/build/outputs/apk/normal
-subdirectory that you can then sign and install on your phone. The .apk flavor is what you normally have
-when downloading one from love2d.org. If you want to build the ["embed"](https://love2d.org/wiki/Game_Distribution/APKTool
+subdirectory that you can then [sign](https://github.com/patrickfav/uber-apk-signer) and install on your phone. The .apk flavor is what you normally have
+when downloading one from love2d.org. If you want to build the ["embed"](https://love2d.org/wiki/Game_Distribution/APKTool)
 APK, change `assembleNormal` to `assembleEmbedRelease` instead at command above.
 
 Alternatively, you can install Android Studio. After opening it for the first time, open it's SDK Manager
@@ -168,7 +168,7 @@ alpha9:
 
 * Packaged games do not get duplicated for loading, instead are loaded from memory (!!!)
 * Using inofficial physfs 2.1
-* Removed love.android.getDisplayMetrics(), instead use love.window.getPixelScale() 
+* Removed love.android.getDisplayMetrics(), instead use love.window.getPixelScale()
 * Properly link LGPL libraries dynamically. Everything else is linked statically
 * Added an icon (design by @josefnpat)
 * Fixed crash on startup on OUYA (and possibly other devices)
