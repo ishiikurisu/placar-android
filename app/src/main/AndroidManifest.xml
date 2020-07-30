@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="org.love2d.android.executable"
+<manifest package="br.eng.crisjr.placar"
   android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android">
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.VIBRATE"/>
@@ -17,9 +17,9 @@
       android:usesCleartextTraffic="true" >
       <service android:name="org.love2d.android.DownloadService" />
       <activity
-        android:name="org.love2d.android.GameActivity"
+        android:name="br.eng.crisjr.placar.PlacarActivity"
         android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden|navigation"
-        android:label="LÖVE for Android"
+        android:label="Placar"
         android:launchMode="singleTask"
         android:screenOrientation="landscape"
         android:resizeableActivity="false"
@@ -74,4 +74,4 @@
         </intent-filter>
       </activity>
     </application>
-</manifest> 
+</manifest>
